@@ -1,0 +1,69 @@
+output "vpc_id" {
+  description = "The ID of the VPC"
+  value       = module.vpc.vpc_id
+}
+
+output "public_subnet_id" {
+  description = "The ID of the public subnet"
+  value       = module.vpc.public_subnet_id
+}
+
+output "private_subnet_id" {
+  description = "The ID of the private subnet"
+  value       = module.vpc.private_subnet_id
+}
+
+output "rds_subnet_id" {
+  description = "The ID of the RDS subnet"
+  value       = module.vpc.rds_subnet_id
+}
+
+output "internet_gateway_id" {
+  description = "The ID of the Internet Gateway"
+  value       = module.vpc.internet_gateway_id
+}
+
+output "alb_arn" {
+  description = "The ARN of the ALB"
+  value       = module.alb.alb_arn
+}
+
+output "alb_dns_name" {
+  description = "The DNS name of the ALB"
+  value       = module.alb.alb_dns_name
+}
+
+output "alb_target_group_arn" {
+  description = "The ARN of the ALB target group"
+  value       = module.alb.alb_target_group_arn
+}
+
+output "alb_http_listener_arn" {
+  description = "The ARN of the HTTP listener"
+  value       = module.alb.http_listener_arn
+}
+
+output "nat_gateway_id" {
+  description = "The ID of the NAT Gateway"
+  value       = module.nat_gateway.nat_gateway_id
+}
+
+output "rds_instance_endpoint" {
+  description = "The endpoint of the RDS instance"
+  value       = module.rds.db_instance_endpoint
+}
+
+output "asg_name" {
+  description = "The name of the Auto Scaling Group"
+  value       = module.asg.name
+}
+
+output "asg_id" {
+  description = "The ID of the Auto Scaling Group"
+  value       = module.asg.id
+}
+
+output "asg_arn" {
+  description = "The ARN of the Auto Scaling Group"
+  value       = module.asg.arn
+}
